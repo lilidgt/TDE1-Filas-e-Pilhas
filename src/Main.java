@@ -13,4 +13,5 @@ public class Main {
             pilha.remover();
             // Ou percorre toda a pilha
             pilha.imprimir();
+    }
 }
