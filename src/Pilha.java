@@ -8,12 +8,9 @@
 public class Pilha {
     //Definindo como um nó o topo pois ele sempre será o primeiro nó da lista
     private Node topo;
-    //Para o usuário definir o tamnho da lista
-    private int tamanho;
 
     public Pilha(){
         this.topo = null;
-        this.tamanho = 0;
     }
 
 
@@ -36,7 +33,7 @@ public class Pilha {
             no.setProximo(primeiro);
             //definimos o novo topo sendo o novo nó criado
             topo = no;
-            tamanho ++;
+
         }
     }
 
@@ -47,7 +44,7 @@ public class Pilha {
         Node proximo = topo.getProximo();
         System.out.println("Valor removido: " + topo.getInformacao());
         topo = proximo;
-        tamanho--;
+
 
     }
 
