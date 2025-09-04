@@ -4,14 +4,18 @@ public class Main {
     public static void main(String[] args) {
             Pilha pilha = new Pilha();
 
+            //inserir valor na pilha
             pilha.inserir(10);
             pilha.inserir(20);
             pilha.inserir(30);
 
-            // Mostra o topo (se tiver peek)
+            //imprimir pilha
             pilha.imprimir();
+
+            //remover valor na pilha
             pilha.remover();
-            // Ou percorre toda a pilha
+
+            //imprimindo pilha após remoção do valor
             pilha.imprimir();
     }
 }

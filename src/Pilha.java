@@ -8,12 +8,9 @@
 public class Pilha {
     //Definindo como um nó o topo pois ele sempre será o primeiro nó da lista
     private Node topo;
-    //Para o usuário definir o tamnho da lista
-    private int tamanho;
 
     public Pilha(){
         this.topo = null;
-        this.tamanho = 0;
     }
 
 
@@ -24,7 +21,7 @@ public class Pilha {
         //insere informação no novo nó
         no.setInformacao(informacao);
 
-        //verificar se a lsiat esta vazia
+        //Se a lista estiver vazia insere o novo nó
         if (topo == null){
             topo = no;
         }
@@ -36,21 +33,27 @@ public class Pilha {
             no.setProximo(primeiro);
             //definimos o novo topo sendo o novo nó criado
             topo = no;
-            tamanho ++;
+
         }
     }
 
     public void remover(){
+
+        //verifica se a lista esta vazia
         if (topo == null){
             System.out.println("Lista vazia");
         }
+        //Pega o proximo no
         Node proximo = topo.getProximo();
+        //Só um print pra mostrar o valor que foi removido
         System.out.println("Valor removido: " + topo.getInformacao());
+        //Removemos o valor definido o novo topo
         topo = proximo;
-        tamanho--;
+
 
     }
 
+    //Imprime a pilha
     public void imprimir(){
         Node atual = topo;
         while (atual != null){
