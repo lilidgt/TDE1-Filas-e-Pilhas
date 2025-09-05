@@ -1,10 +1,10 @@
-public class FilaVetor {
+public class Merge {
     private int primeira;
     private int ultimo;
     private int capacidade;
     private int dados[];
 
-    public FilaVetor(){
+    public Merge(){
         this.primeira = -1;
         this.ultimo = -1;
         this.capacidade = capacidade;
