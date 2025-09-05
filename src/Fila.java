@@ -4,6 +4,16 @@ public class Fila {
     //indice ultimo elemento
     private Node ultimo;
 
+    //fila vazia
+    public boolean vazia() {
+        return primeiro == null;
+    }
+
+    //olha o primeiro sem tirar ele :p (null se n tiver nd)
+    public int frente() {
+        return primeiro.getInformacao();
+    }
+
     public Fila (){
         this.primeiro = null;
         this.ultimo = null;
