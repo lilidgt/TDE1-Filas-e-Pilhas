@@ -16,7 +16,7 @@ public class Fila {
             primeiro = no;
             ultimo = no;
         }
-        //primeiro -> no <- ultimo
+
         else{
             //ultimo aponta para o nó que foi criado
              ultimo.setProximo(no);
