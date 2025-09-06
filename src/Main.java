@@ -25,15 +25,17 @@ public class Main {
             fila.imprimir();
             System.out.println("---------");
 
-            // TESTE MERGE FILA
+            //TESTE MERGE FILA
             System.out.println("Merge Fila: ");
             Fila fila1 = new Fila();
             Fila fila2 = new Fila();
+            //fila1
             fila1.inserir(1);
             fila1.inserir(3);
             fila1.inserir(5);
             fila1.inserir(7);
             fila1.inserir(9);
+            //fila2
             fila2.inserir(2);
             fila2.inserir(4);
             fila2.inserir(6);
@@ -48,6 +50,27 @@ public class Main {
             Fila resultado = Merge.mergeOrdenadoFila(fila1, fila2);
             System.out.println("fila3:");
             resultado.imprimir();
+            System.out.println("---------");
+
+            //TESTE MERGE
+            System.out.println("Merge Vetor: ");
+            //vetorA
+            int[] A = new int[5];
+            A[0] = 1; A[1] = 3; A[2] = 5; A[3] = 7; A[4] = 9;
+            int tamA = 5;
+            //vetorB
+            int[] B = new int[5];
+            B[0] = 0; B[1] = 2; B[2] = 4; B[3] = 6; B[4] = 8;
+            int tamB = 5;
+            //vetores originais
+            System.out.print("A: ");
+            Merge.imprimir(A, tamA);
+            System.out.print("B: ");
+            Merge.imprimir(B, tamB);
+            //vetor c
+            int[] C = Merge.mergeOrdenadoVetor(A, tamA, B, tamB);
+            System.out.print("C: ");
+            Merge.imprimir(C, tamA + tamB);
             System.out.println("---------");
     }
 }
