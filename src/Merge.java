@@ -41,10 +41,10 @@ public class Merge {
         while (i < tamA && j < tamB) {
             //se for o do a
             if (a[i] <= b[j]) {
-                c[k++] = a[i++];
+                c[k] = a[i];
                 i++;
             } else{ //se for o do b
-                c[k++] = b[j++];
+                c[k] = b[j];
                 j++;
             }
             k++;
